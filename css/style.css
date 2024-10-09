@@ -1,0 +1,1156 @@
+*,
+*::before,
+*::after {
+
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+    font-family: system-ui;
+
+}
+
+body::selection {
+
+    color: white;
+    background-color: #D85454;
+}
+
+
+
+h2 {
+
+    font-size: 40px;
+    font-family: "Amatic SC", sans-serif;
+
+}
+
+/** nav bar-------**/
+
+.container {
+
+    width: 90%;
+    margin: auto;
+}
+
+.nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-color: white;
+
+}
+
+.nav .container {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav .container h2 {
+
+    font-family: system-ui;
+    font-size: 35px;
+    position: relative;
+    border: 3px solid black;
+    padding: 2px;
+}
+
+.nav .container h2::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #CE1212;
+    border-radius: 50%;
+    bottom: 10px;
+    left: 121px;
+    position: absolute;
+
+}
+
+
+.nav .container .links ul {
+    display: none;
+}
+
+
+
+/**------------ end of nav and start section-1  -----------**/
+
+.section-1 {
+
+    margin-top: 115px;
+}
+
+.section-1 .container {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-1 .container .item img {
+
+    width: 100%;
+    filter: drop-shadow(2px 4px 6px black);
+
+}
+
+
+
+
+
+.section-1 .container .item span {
+
+    font-size: 40px;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    margin-block: 10px;
+
+}
+
+.section-1 .container .item p {
+
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+
+.section-1 .container .item .f-btn a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.section-1 .container .item .f-btn {
+    padding: 15px 20px;
+    background-color: #CE1212;
+    border: transparent;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 15px;
+}
+
+.section-1 .container .item .sec-btn a {
+
+    text-decoration: none;
+    color: black;
+}
+
+.section-1 .container .item .sec-btn {
+
+    margin-inline: 15px;
+    border: transparent;
+    padding: 15px 30px;
+    background-color: transparent;
+    font-size: 15px;
+    position: relative;
+}
+
+.section-1 .container .item .sec-btn::before {
+
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: -5px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 3px solid #CE1212;
+    border-right: 3px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.section-1 .container .item .sec-btn::after {
+    cursor: pointer;
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 21px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-left: 8px solid black;
+    border-bottom: 4px solid transparent;
+}
+
+/** ---end of section one mobile design and start section 2---- **/
+
+.span-1 {
+
+    opacity: 0.5;
+    font-size: 20px;
+}
+
+.span-2 {
+    color: #CE1212;
+}
+
+.chefs {
+
+    margin-top: 50px;
+}
+
+.chefs .container {
+    padding: 20px;
+
+}
+
+.chefs .container .header,
+.gallery .container .header,
+.contact .container .header {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.chefs .container .inner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.chefs .container .inner .photobox {
+    padding-block: 35px;
+    border-radius: 7px;
+}
+
+.chefs .container .inner .photobox .picture {
+    position: relative;
+    transition: transform 1s;
+}
+
+
+
+/* .chefs .container .inner .photobox .picture::after {
+
+    content: 'url()';
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+} */
+
+.chefs .container .inner .photobox .picture img {
+    width: 100%;
+    border-radius: 7px;
+
+}
+
+.chefs .container .inner .photobox:hover {
+
+    transform: scale(1.1);
+}
+
+
+
+.chefs .container .inner .photobox {
+
+    position: relative;
+    box-shadow: 10px 10px 5px #010f1321;
+    overflow: hidden;
+    transition: transform 0.5s;
+    margin-block: 15px;
+}
+
+
+.chefs .container .inner .photobox:hover .social-icons {
+
+    transform: translateX(0);
+    transition: transform 1s;
+}
+
+.chefs .container .inner .photobox .social-icons {
+
+    width: fit-content;
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    background-color: transparent;
+    text-align: center;
+    border-radius: 5px;
+    transform: translateX(120%);
+
+}
+
+.chefs .container .inner .photobox .social-icons ul {
+    list-style: none;
+}
+
+.chefs .container .inner .photobox .social-icons ul li {
+    padding-block: 3px;
+}
+
+.chefs .container .inner .photobox .social-icons ul li a {
+
+    color: rgba(128, 128, 128, 0.726);
+    transition: color 1s;
+    margin-inline: 6px;
+    font-size: 20px;
+}
+
+.chefs .container .inner .photobox .social-icons ul li a:hover {
+    color: black;
+
+}
+
+.chefs .container .inner .photobox .content {
+
+
+    background-color: white;
+    width: fit-content;
+    text-align: center;
+    text-transform: capitalize;
+    padding-inline: 5px;
+}
+
+.chefs .container .inner .photobox .content .opacity {
+
+    opacity: 0.6;
+}
+
+/** end of section chefs and start section gallery  **/
+
+.gallery {
+
+    background-color: #EEEEEE;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.gallery .container .header {
+
+    margin-top: 50px;
+
+}
+
+
+
+
+
+
+.gallery .container .inner .photobox {
+
+    border: 5px solid white;
+    border-radius: 5px;
+    margin-block: 10px;
+
+}
+
+.gallery .container .inner .photobox .picture {
+
+    position: relative;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+
+}
+
+.gallery .container .inner .photobox .picture img {
+
+    width: 100%;
+    display: block;
+}
+
+
+.gallery .container .inner .photobox .picture .layer {
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    background-color: #000000b4;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    transition: opacity 1s, top 1s;
+}
+
+.gallery .container .inner .photobox:hover .layer {
+
+    opacity: 1;
+    top: 0;
+}
+
+.gallery .container .photobox .picture .layer .layer-content {
+
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.gallery .container .inner .photobox .picture .layer .layer-content span {
+
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.gallery .container .inner .photobox .picture .layer .layer-content p {
+
+    opacity: 0.5;
+    font-size: 20px;
+}
+
+
+.gallery .container .inner .pizza {
+
+    order: 1;
+}
+
+.gallery .container .inner .burger {
+    order: 2;
+
+}
+
+.gallery .container .inner .pizza-slice {
+
+    order: 3;
+}
+
+.gallery .container .inner .omlette {
+
+    order: 4;
+}
+
+.gallery .container .inner .steak {
+
+    order: 5;
+}
+
+.gallery .container .inner .fried {
+
+    order: 6;
+}
+
+.gallery .container .inner .kofta {
+
+    order: 7;
+}
+
+/** -end section gallery and start section contact----- **/
+
+.contact {
+
+    margin-top: 50px;
+}
+
+.contact .container iframe {
+    width: 100%;
+    height: 350px;
+
+}
+
+.contact .container .info .address,
+.contact .container .info .mail,
+.contact .container .info .contact,
+.contact .container .info .opening {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-block: 10px;
+
+}
+
+.contact .container .info .address .inner,
+.contact .container .info .mail .inner,
+.contact .container .info .contact .inner,
+.contact .container .info .opening .inner {
+    display: flex;
+    align-items: center;
+    background-color: #EEEEEE;
+    text-transform: capitalize;
+    padding: 5px;
+    margin-block: 5px;
+
+}
+
+.contact .container .info .icon {
+
+    background-color: #CE1212;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+
+}
+
+.contact .container .info .content h3 {
+
+    opacity: 0.5;
+
+}
+
+.contact .container .info .mail .content a {
+
+    color: black;
+    text-decoration: none;
+}
+
+.contact .container .info .contact .content a {
+
+    text-decoration: none;
+    color: black;
+}
+
+.contact .container form {
+
+    box-shadow: 0 0 20px #00000014;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 100%;
+
+}
+
+.contact .container form .inputs {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+
+
+.contact .container form .inputs input {
+
+    padding: 15px;
+}
+
+
+
+.contact .container form input {
+
+    padding: 15px;
+    border-color: rgba(0, 0, 0, 0.182);
+}
+
+.contact .container form input:focus {
+
+    outline: none;
+    border: 2px solid #CE1212;
+}
+
+.contact .container form textarea:focus {
+    outline: none;
+    border: 2px solid #CE1212;
+
+}
+
+.contact .container form textarea {
+    resize: both;
+    padding: 15px;
+    border-color: rgba(0, 0, 0, 0.182);
+
+}
+
+.contact .container form button {
+    width: fit-content;
+    padding: 12px 40px;
+    margin: auto;
+    border: none;
+    border-radius: 25px;
+    background-color: #CE1212;
+    color: white;
+    font-size: 15px;
+    transition: background-color 1s;
+    font-family: system-ui;
+}
+
+.contact .container form button:hover {
+
+    background-color: red;
+    cursor: pointer;
+}
+
+/** ---------end contact section and start footer ---------**/
+
+.footer {
+    margin-top: 30px;
+    background-color: black;
+}
+
+.footer .container .details-1,
+.details-2 {
+    color: white;
+}
+
+
+
+.footer .container {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.footer .container .details-1 .header {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .container .details-1 .header span {
+
+    font-family: system-ui;
+    font-size: 35px;
+    position: relative;
+    color: white;
+    padding: 2px;
+}
+
+.footer .container .details-1 .header span::after {
+
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #CE1212;
+    border-radius: 50%;
+    bottom: 10px;
+    left: 111px;
+    position: absolute;
+
+}
+
+.footer .container .details-1 .header i {
+
+    color: #CE1212;
+    font-size: 25px;
+}
+
+.footer .container .details-1 p {
+
+    margin-block: 10px;
+}
+
+.footer .container .details-1 h4 {
+
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 5px;
+    border-bottom: 3px solid rgba(221, 221, 221, 0.329);
+    margin-bottom: 10px;
+}
+
+.footer .container .details-1 ul {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    list-style: none;
+
+}
+
+.footer .container .details-1 ul li a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 1s;
+}
+
+.footer .container .details-1 ul li a:hover {
+
+    color: red;
+}
+
+.footer .container .details-2 h4 {
+
+
+    font-weight: 600;
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.footer .container .details-2 .form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+
+}
+
+.footer .container .details-2 .form input {
+
+    padding: 5px;
+    /* flex-grow: 1; */
+    height: 35px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.footer .container .details-2 .form input:focus {
+
+    border-color: transparent;
+    outline: none;
+}
+
+.footer .container .details-2 .form button {
+
+    background-color: #CE1212;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    transition: background-color 1s;
+
+}
+
+.footer .container .details-2 .form button:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.footer .container .details-2 .quick-links h4 {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+
+}
+
+
+.footer .container .details-2 .quick-links ul {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-block: 5px;
+    gap: 10%;
+    list-style: none;
+
+}
+
+.footer .container .details-2 .quick-links ul li {
+    position: relative;
+    width: 45%;
+
+}
+
+.footer .container .details-2 .quick-links ul li::before {
+
+    content: ">";
+    position: absolute;
+    top: -1px;
+    left: -11px;
+    color: white;
+
+}
+
+.footer .container .details-3 h4 {
+
+    font-weight: 600;
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer .container .details-3 .flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-block: 10px;
+}
+
+.footer .container .details-3 .flex i {
+
+    color: red;
+    font-size: 20px;
+}
+
+.footer .container .details-3 .flex span {
+    color: white;
+}
+
+.footer .container .details-3 .flex a {
+
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+/** ---- media when i'm working mobile frist----  **/
+
+@media screen and (min-width:640px) {
+
+
+
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        z-index: 999;
+
+
+    }
+
+    .nav .container {
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .nav .container .links ul {
+
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .nav .container .links ul {
+        list-style: none;
+    }
+
+    .nav .container .links ul li {
+
+        padding: 0 15px;
+    }
+
+
+
+    .nav .container .links ul li {
+        padding-block: 10px;
+
+    }
+
+    .nav .container .links ul li a {
+
+
+        text-decoration: none;
+        color: black;
+
+    }
+
+    .nav .container .links ul .opacity {
+        opacity: 0.5;
+        font-weight: 600;
+    }
+
+    .nav .container .links ul .home {
+
+        position: relative;
+    }
+
+    .nav .container .links ul .home::after {
+
+        content: '';
+        background-color: #CE1212;
+        height: 3px;
+        width: 50px;
+        bottom: -4px;
+        left: -2px;
+        position: absolute;
+    }
+
+    .nav .container .icon i {
+
+        font-size: 30px;
+    }
+
+    /**------- section-1-----  **/
+
+
+    .section-1 {
+        height: 100vh;
+        margin-top: 100px;
+        background-color: #EEEEEE;
+    }
+
+    .section-1 .container {
+
+
+        padding: 0 15px;
+        height: 100vh;
+
+    }
+
+    .section-1 .container {
+
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: auto;
+    }
+
+    .section-1 .container .item {
+
+        width: 33.333%;
+    }
+
+
+    .section-1 .container .item img {
+        width: 100%;
+
+    }
+
+    .section-1 .container .item span {
+
+        font-family: "Amatic SC", sans-serif;
+        font-weight: 700;
+        font-size: 50px;
+    }
+
+    .section-1 .container .item p {
+
+        font-size: 20px;
+        opacity: 0.5;
+    }
+
+    .section-1 .container .item .f-btn a {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .section-1 .container .item .f-btn {
+        padding: 15px 20px;
+        background-color: #CE1212;
+        border: transparent;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        font-size: 15px;
+    }
+
+    .section-1 .container .item .sec-btn a {
+
+        text-decoration: none;
+        color: black;
+    }
+
+    .section-1 .container .item .sec-btn {
+
+        margin-inline: 15px;
+        border: transparent;
+        padding: 15px 30px;
+        background-color: transparent;
+        font-size: 15px;
+        position: relative;
+    }
+
+    .section-1 .container .item .sec-btn::before {
+
+        content: '';
+        position: absolute;
+        top: 11px;
+        left: -5px;
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border: 3px solid #CE1212;
+        border-right: 3px solid transparent;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .section-1 .container .item .sec-btn::after {
+        cursor: pointer;
+        content: '';
+        position: absolute;
+        left: 7px;
+        top: 21px;
+        width: 0;
+        height: 0;
+        border-top: 4px solid transparent;
+        border-left: 8px solid black;
+        border-bottom: 4px solid transparent;
+    }
+
+    /** Start foooooter  hereeeee**/
+
+    .footer .container {
+
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .footer .container .details-2 .form {
+
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 5px;
+
+    }
+
+    .footer .container .details-2 .form input {
+
+        flex-grow: 1;
+        height: 50px;
+        margin-bottom: 0;
+
+    }
+
+    .footer .container .details-2 .form button {
+
+        border-radius: 0;
+        height: 50px;
+    }
+
+
+
+
+
+}
+
+@media screen and (min-width:768px) {
+
+    /** section-1 **/
+    .section-1 .container .item span {
+
+        font-size: 70px;
+    }
+
+    /** chef section  **/
+
+    .chefs .container .inner {
+
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .chefs .container .inner .photobox .picture {
+
+        width: 80%;
+        margin: auto;
+    }
+
+    /** gallery section  */
+
+    .gallery .container .inner {
+
+        columns: 2;
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    .chefs .container .inner .photobox .picture {
+
+        width: 100%;
+    }
+
+    .chefs .container .inner {
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+
+    }
+
+
+    .chefs .container .inner .photobox {
+
+        padding-inline: 30px;
+        margin: 0;
+    }
+
+
+
+    /**-------------- Gallery section ----------------- **/
+    .gallery .container .inner {
+
+        columns: 2;
+    }
+
+    /** ----------- contact section  **/
+
+
+
+    .contact .container .info .address,
+    .contact .container .info .mail,
+    .contact .container .info .contact,
+    .contact .container .info .opening {
+
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding-inline: 15px;
+
+    }
+
+
+
+
+
+
+
+    .contact .container form .inputs {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        column-gap: 3px;
+    }
+
+
+
+
+
+}
+
+@media screen and (min-width:1200px) {
+
+
+
+    .gallery .container .inner {
+
+
+        columns: 3;
+        gap: 1rem;
+
+    }
+
+
+
+
+
+
+}
