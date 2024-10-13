@@ -302,15 +302,6 @@ h2 {
 
 
 
-/* .chefs .container .inner .photobox .picture::after {
-
-    content: 'url()';
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    bottom: 50%;
-    left: 0;
-} */
 
 .chefs .container .inner .photobox .picture img {
     width: 100%;
@@ -328,10 +319,11 @@ h2 {
 .chefs .container .inner .photobox {
 
     position: relative;
-    box-shadow: 10px 10px 5px #010f1321;
+    box-shadow: 3px 3px 3px #010f1321;
     overflow: hidden;
     transition: transform 0.5s;
     margin-block: 15px;
+
 }
 
 
@@ -364,7 +356,7 @@ h2 {
 
 .chefs .container .inner .photobox .social-icons ul li a {
 
-    color: rgba(128, 128, 128, 0.726);
+    color: rgba(128, 128, 128, 0.862);
     transition: color 1s;
     margin-inline: 6px;
     font-size: 20px;
@@ -1135,6 +1127,8 @@ h2 {
 
 @media screen and (min-width:1024px) {
 
+
+
     .chefs .container .inner .photobox .picture {
 
         width: 100%;
@@ -1176,9 +1170,9 @@ h2 {
     .contact .info .opening {
 
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         column-gap: 5px;
-        width: calc((100% - 5) / 2);
+        width: calc((100% - 5px) / 2);
 
 
     }
